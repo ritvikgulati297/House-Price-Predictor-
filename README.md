@@ -10,12 +10,12 @@ Real estate buyers and sellers often price homes off gut feeling or rough compar
 
 [Housing Prices Dataset](https://www.kaggle.com/datasets/yasserh/housing-prices-dataset) : 545 houses, 13 columns:
 
-- `price` — target variable
-- `area`, `bedrooms`, `bathrooms`, `stories`, `parking` — numeric features
-- `mainroad`, `guestroom`, `basement`, `hotwaterheating`, `airconditioning`, `prefarea` , yes/no amenity & location flags
-- `furnishingstatus` — furnished / semi-furnished / unfurnished
+- `price` : target variable
+- `area`, `bedrooms`, `bathrooms`, `stories`, `parking` : numeric features
+- `mainroad`, `guestroom`, `basement`, `hotwaterheating`, `airconditioning`, `prefarea` : yes/no amenity & location flags
+- `furnishingstatus` : furnished / semi-furnished / unfurnished
 
-The dataset arrived clean — no missing values and no duplicate rows.
+The dataset arrived clean : no missing values and no duplicate rows.
 
 ## Methodology
 
@@ -32,7 +32,7 @@ The dataset arrived clean — no missing values and no duplicate rows.
 | Linear Regression | ₹970,043 | ₹1,324,507 | 0.65 |
 | Random Forest | ₹1,021,546 | ₹1,400,566 | 0.61 |
 
-Linear Regression edges out Random Forest on this dataset, and the edge holds up across cross-validation, not just one lucky split — likely because price scales fairly linearly with the strongest features and 545 rows isn't much for a tree ensemble to exploit.
+Linear Regression edges out Random Forest on this dataset, and the edge holds up across cross-validation, not just one lucky split  likely because price scales fairly linearly with the strongest features and 545 rows isn't much for a tree ensemble to exploit.
 
 **Biggest price drivers:** `area` and `bathrooms`, by a wide margin, followed by `airconditioning`, `stories`, and `parking`.
 
@@ -66,5 +66,3 @@ jupyter notebook analysis.ipynb
 ```
 
 ## Ritvik Gulati
-
-[Your Name]
